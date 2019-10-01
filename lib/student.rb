@@ -26,6 +26,7 @@ class Student
     self.new_from_db(student_row)
   end
   def self.count_all_students_in_grade_9
+    # method should return an array of all the students in grade 9.
       sql = "SELECT * FROM students WHERE grade = 9"
       DB[:conn].execute(sql)
     end
