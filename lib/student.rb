@@ -50,7 +50,7 @@ class Student
     self.new_from_db(first_student_row)
 
     def self.all_students_in_grade_X(x)
-    # This method should return an array of all students for grade X  
+    # This method should return an array of all students for grade X
       sql = "SELECT * FROM students WHERE grade = ?"
       DB[:conn].execute(sql, x)
     end
